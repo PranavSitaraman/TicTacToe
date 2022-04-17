@@ -1,7 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<iostream>
-using namespace std;
+#include<time.h>
+int min(int x, int y)
+{
+    return (((x) < (y)) ? (x) : (y));
+}
+int max(int x, int y)
+{
+    return (((x) > (y)) ? (x) : (y));
+}
 long long relativetime = 0;
 struct Move
 {
@@ -454,7 +461,7 @@ void testing()
     printf("Alpha-beta pruning, going second - wins: %d, ties: %d, losses: %d - relative time of %lld\n", wins, ties, losses, relativetime);
     relativetime = 0;
 }
-void tictactoe()
+int main()
 {
     srand(time(0));
     char choice;
