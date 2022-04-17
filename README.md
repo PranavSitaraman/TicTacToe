@@ -1,1 +1,2 @@
-# Tic Tac Toe implementation with minimax and alpha-beta pruning in C++
+# Tic Tac Toe
+## Implementation with minimax and alpha-beta pruning in C++
